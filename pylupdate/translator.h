@@ -33,7 +33,9 @@
 #include <qtranslator.h>
 
 class TranslatorPrivate;
+QT_BEGIN_NAMESPACE
 template <typename T> class QList;
+QT_END_NAMESPACE
 
 class TranslatorMessage
 {

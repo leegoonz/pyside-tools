@@ -15,6 +15,10 @@ configure_file("pysideuic/__init__.py.in" "__init__.py" @ONLY)
 
 option(BUILD_TESTS "Build tests." TRUE)
 
+if(QT_NAMESPACE)
+    add_definitions(-DQT_NAMESPACE=${QT_NAMESPACE})
+endif()
+
 # UIC stuff
 if (NOT SITE_PACKAGE)
     execute_process(
